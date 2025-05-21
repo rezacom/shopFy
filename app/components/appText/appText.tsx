@@ -4,7 +4,7 @@ import AppTextProps from "./types";
 import styles from "./styles";
 
 function AppText({ ...rest }: TextProps & AppTextProps) {
-  return <Text {...rest} style={styles.text} />;
+  return <Text {...rest} style={[styles.text, rest.style]} />;
 }
 
 export default AppText;

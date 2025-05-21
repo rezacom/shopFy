@@ -4,7 +4,7 @@ import AppTextProps from "./types";
 import styles from "./styles";
 
 function AppText({ ...rest }: TextProps & AppTextProps) {
-  return <Text {...rest} style={styles.androidText} />;
+  return <Text {...rest} style={[styles.androidText, rest.style]} />;
 }
 
 export default AppText;

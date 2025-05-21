@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Image, ImageBackground, Text, View } from "react-native";
+import { Image, ImageBackground, View } from "react-native";
 import styles from "./styles";
-import PrimaryButton from "@/app/components/button/primaryButton";
+import { PrimaryButton, SecoundaryButton } from "@/app/components/button";
 import AppText from "@/app/components/appText";
-// import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 function WelcomeScreens() {
   return (
@@ -16,7 +15,7 @@ function WelcomeScreens() {
 
       <View style={styles.bottomView}>
         <PrimaryButton title="Login" onPress={() => console.log("Taped")} />
-        <Button title="Sign Up" />
+        <SecoundaryButton title="Sign Up" />
       </View>
     </ImageBackground>
   );
