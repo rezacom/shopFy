@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     gap: 20,
-    padding: 5,
+    padding: 0,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   tinyLogo: {

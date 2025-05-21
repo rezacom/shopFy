@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 
 import styles from "./styles";
 import ProductCard from "@/app/components/cards/product/productCard";
@@ -7,11 +7,13 @@ import ProductCard from "@/app/components/cards/product/productCard";
 function ProductsScreen() {
   return (
     <View style={styles.container}>
-      <ProductCard title="shirt" subTitle="$200" image={require("@/assets/images/1.jpg")} />
-      <ProductCard title="shirt" subTitle="$200" image={require("@/assets/images/2.jpg")} />
-      <ProductCard title="shirt" subTitle="$200" image={require("@/assets/images/3.png")} />
-      <ProductCard title="shirt" subTitle="$200" image={require("@/assets/images/4.jpg")} />
-      <ProductCard title="shirt" subTitle="$200" image={require("@/assets/images/5.jpg")} />
+      <ScrollView>
+        <ProductCard title="Camera" subTitle="$200" image={require("@/assets/images/1.jpg")} />
+        <ProductCard title="Iphone 7 pro" subTitle="$200" image={require("@/assets/images/2.jpg")} />
+        <ProductCard title="Sony Experia z1" subTitle="$200" image={require("@/assets/images/3.png")} />
+        <ProductCard title="Tablet pro" subTitle="$200" image={require("@/assets/images/4.jpg")} />
+        <ProductCard title="Sony Experia " subTitle="$200" image={require("@/assets/images/5.jpg")} />
+      </ScrollView>
     </View>
   );
 }
