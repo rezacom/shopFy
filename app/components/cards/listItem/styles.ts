@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   card: {
-    marginBottom: 20,
+    padding: 15,
     flexDirection: "row",
     gap: 7,
   },

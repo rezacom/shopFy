@@ -5,6 +5,7 @@ import WelcomeScreens from "./app/screens/welcome";
 import ProductsScreen from "./app/screens/products";
 import ProductDetailScreen from "./app/screens/productDetail";
 import ViewImageScreen from "./app/screens/viewImage";
+import MessagesScreen from "./app/screens/messages";
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
       {/* <WelcomeScreens /> */}
       {/* <ProductsScreen /> */}
       {/* <ProductDetailScreen /> */}
-      <ViewImageScreen />
+      {/* <ViewImageScreen /> */}
+      <MessagesScreen />
     </SafeAreaView>
   );
 }
